@@ -32,12 +32,8 @@ The primary goal of this project was to apply practical algorithms and tools in 
    - Prepare a concise report (10-15 pages) detailing the approach, methodology, and results.
    - Attach the code as an accompanying document or provide a link to the repository.
 
-## Approach and Results
-
-The project involved a systematic exploration of various data science tasks, incorporating alternative methods and leveraging external guidance from ChatGPT. Notably, the use of non-deep learning methods for classification was emphasized, and steps 3-6 included experimentation with visual embeddings as an alternative to traditional dimensionality reduction.
 
 ## Conclusion
 
 The project demonstrated a holistic approach to data science tasks, encompassing data exploration, dimensionality reduction, clustering, and classification. The utilization of alternative methods and the integration of external guidance added depth to the analysis.
 
-For detailed information, please refer to the full report in the repository.
