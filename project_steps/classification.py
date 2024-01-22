@@ -12,3 +12,5 @@ def classify_evalute(train_images_flat, train_labels, test_images_flat, test_lab
     
     predictions = model.predict(test_images_scaled)
     print(classification_report(test_labels, predictions))
+    with open('classification_report.md', 'w') as file:
+        file.write(classification_report(test_labels, predictions))

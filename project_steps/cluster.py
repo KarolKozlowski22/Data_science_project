@@ -18,11 +18,13 @@ def cluster_kmeans_accuracy(train_images_flat, train_labels):
     completeness = completeness_score(train_labels, clusters)
     v_measure = v_measure_score(train_labels, clusters)
 
-    print("Confusion Matrix:\n", conf_matrix)
-    print("\nAccuracy: {:.2f}%".format(accuracy * 100))
-    print("\nSilhouette Score: {:.2f}".format(silhouette))
-    print("Adjusted Rand Index: {:.2f}".format(ari))
-    print("Homogeneity Score: {:.2f}".format(homogeneity))
-    print("Completeness Score: {:.2f}".format(completeness))
-    print("V-measure Score: {:.2f}".format(v_measure))
+    with open('output.txt', 'w') as f:
+        f.write("Confusion Matrix:\n")
+        f.write(str(conf_matrix))
+        f.write("\nAccuracy: {:.2f}%".format(accuracy * 100))
+        f.write("\nSilhouette Score: {:.2f}".format(silhouette))
+        f.write("\nAdjusted Rand Index: {:.2f}".format(ari))
+        f.write("\nHomogeneity Score: {:.2f}".format(homogeneity))
+        f.write("\nCompleteness Score: {:.2f}".format(completeness))
+        f.write("\nV-measure Score: {:.2f}".format(v_measure))
 

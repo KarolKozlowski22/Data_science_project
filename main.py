@@ -9,6 +9,7 @@ from project_steps.tSNE import tsne_2d_reduction, tsne_3d_reduction
 from project_steps.classification import classify_evalute
 
 (train_images, train_labels), (test_images, test_labels) = get_and_split_data()
+(summary_images, summary_labels), (test_summary_images, test_summary_labels) = get_and_split_data(sample_size=0.001)
 count_num_of_each_label = [0] * 10
 
 for label in train_labels:
@@ -18,7 +19,8 @@ print(count_num_of_each_label)
 
 train_images_flat = train_images.reshape((train_images.shape[0], -1))
 test_images_flat = test_images.reshape((test_images.shape[0], -1))
-data_summary(train_images_flat, train_labels)
+summary_images_flat = summary_images.reshape((summary_images.shape[0], -1))
+data_summary(summary_images_flat, summary_labels)
 
 train_images_pca_2d = pca_2d_reduction(train_images_flat)
 train_images_pca_3d = pca_3d_reduction(train_images_flat)
