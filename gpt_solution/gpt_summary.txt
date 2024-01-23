@@ -1,0 +1,1 @@
+Number of samples: 21000Number of features (pixels per image): 784Number of classes: 10Class names: ['T-shirt/top', 'Trouser', 'Pullover', 'Dress', 'Coat', 'Sandal', 'Shirt', 'Sneaker', 'Bag', 'Ankle boot']
